@@ -1,0 +1,72 @@
+.header{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    height: 70px;
+    position: relative;
+}
+.images{
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+}
+.images a{
+    padding-left: 10px;
+}
+.images a img{
+    width: 50px;
+    object-fit: contain;
+
+}
+.products{
+    padding: 0 10vw;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    display: table;
+    clear: both;
+}
+
+.product-box{
+    /*flex: 0 0 auto;*/
+   /*width: 300px;*/
+    height: 450px;
+    /*margin-right: 40px;*/
+    float: left;
+    width: 33.33%;
+    padding: 50px 60px 50px;
+}
+
+.product-image{
+    position: relative;
+    max-width: 500px;
+    height: 300px;
+
+}
+
+.image-design{
+    max-width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.product-information{
+    width :100%;
+    height: 100px;
+    padding-top: 10px 10px 50px;
+}
+
+table .receipt {
+    margin-left: auto;
+    margin-right: auto;
+  }
+th{
+    background-color: #9dd3bf;
+    color: rgb(20, 4, 4);
+  }
+tr{
+    background-color: #c178e2;
+    color: rgb(14, 13, 13);
+}

@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title> Nifemi's online store</title>
+        <script src="formChecker.js"> </script>
+        <link rel="stylesheet"  type = "text/css" href="style.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <?php include 'customerBackend.php';?>
+        <form name = "myForm" class= "modal-content animate" action = "customerBackend.php" onsubmit="return validation()" method = "post">
+        <div id = "store">
+        <div class = "header">
+            <h1> Nifemi's superstore</h1>
+            <div class = "images">
+                <a href = "#"><img src = "profile.png" alt=""></a>
+                <a href = "#"><img src = "cart2.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class = "products">
+            <div class = "product-box">
+                <div class = "product-image">
+                    <img src = "Fayrouz.png" class = "image-design" alt = "">
+                </div>
+                <div class = product-information>
+                    <h2 class = "product-name" >Fayrouz drink</h2>
+                    <p class = "product-description">Fayrouz premium sparkling drink, pineapple flavoured, 16.9 FL oz (6 pack) </p>
+                  <!--  <p class = "price" data-cost = "25">$25</p> -->
+                  <span id = "price" class = "Price" data-cost = "25" >$25</span>
+                  <input type="hidden" name="price1" value="25">
+                    <select name = "quantity1" id = "qty-select">
+                        <option value = ""> --Quantity--</option>
+                        <option value ="1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                    </select>
+                  </div>
+            </div>
+            <div class = "product-box">
+                <div class = "product-image">
+                    <img src = "Smoov2.jpg" class = "image-design" alt = "">
+                </div>
+                <div class = product-information>
+                    <h2 class = "product-name" >Smoov Chapman</h2>
+                    <p class = "product-description">Smoov non-alchoholic drink, 16.9 FL oz (6 pack)  </p>
+                    <span id = "price2" class = "Price" data-cost = "20">$20</span>
+                    <input type="hidden" name="price2" value="20">
+                    <select name = "quantity2" id = "qty-select2">
+                        <option value = ""> --Quantity--</option>
+                        <option value ="1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                    </select>
+                  </div>
+            </div>
+            <div class = "product-box">
+                <div class = "product-image">
+                    <img src = "Milk_chocolate_digestive2.jpeg" class = "image-design" alt = "">
+                </div>
+                <div class = product-information>
+                    <h2 class = "product-name" >Mcvitie's Digestive Biscuits Milk chocolate flavoured</h2>
+                    <p class = "product-description">Mcvities milk chocolate digestives 10.5 ounce (6 pack)  </p>
+                    <span id = "price3" class = "Price" data-cost = "33">$33</span>
+                    <input type="hidden" name="price3" value="33">
+                    <select name = "quantity3" id = "qty-select3">
+                        <option value = ""> --Quantity--</option>
+                        <option value ="1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                    </select>
+                  </div>
+            </div>
+            <div class = "product-box">
+                <div class = "product-image">
+                    <img src = "Original_digestive2.jpg" class = "image-design" alt = "">
+                </div>
+                <div class = product-information>
+                    <h2 class = "product-name" >Mcvitie's Digestive Biscuits original Biscuits</h2>
+                    <p class = "product-description">Mcvitie's disgestive wheat biscuits 8.8 ounce (6 pack). </p>
+                    <span id = "price4" class = "Price" data-cost = "22">$22</span>
+                    <input type="hidden" name="price4" value="22">
+                    <select name = "quantity4" id = "qty-select4">
+                        <option value = ""> --Quantity--</option>
+                        <option value ="1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                    </select>
+                  </div>
+            </div>
+            <div class = "product-box">
+                <div class = "product-image">
+                    <img src = "laca2.jpg" class = "image-design" alt = "">
+                </div>
+                <div class = product-information>
+                    <h2 class = "product-name" >LaCasera </h2>
+                    <p class = "product-description">LaCasera Apple flavoured sweet fizzy drink , 16.9 FL oz (12 pack)</p>
+                    <span id = "price5" class = "Price" data-cost = "30">$30</span>
+                    <input type="hidden" name="price5" value="30">
+                    <select name = "quantity5" id = "qty-select5">
+                        <option value = ""> --Quantity--</option>
+                        <option value ="1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                    </select>
+                  </div>
+            </div>
+            <div class = "product-box">
+                <div class = "product-image">
+                    <img src = "Mcvities.jpg" class = "image-design" alt = "">
+                </div>
+                <div class = product-information>
+                    <h2 class = "product-name" >Rich tea</h2>
+                    <p class = "product-description">Mcvities rich tea Biscuits, 10.5 oz, (4 pack).  </p>
+                    <span id = "price6" class = "Price" data-cost = "15">$15</span>
+                    <input type="hidden" name="price6" value="15">
+                    <select name = "quantity6" id = "qty-select6">
+                        <option value = ""> --Quantity--</option>
+                        <option value ="1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                    </select>
+                  </div>
+            </div>
+        </div>
+      </div><br>
+      <div>
+          <p> To be able to continue you need to create an account and set a password below before submitting your order</p>
+           <div id = "loginId" class = "modal" >
+            <div class = "container">
+                <label for = "uname"><b>Username</b></label>
+                <input type ="text" placeholder="Enter Username e.g User@domain.com" name = "uname" >
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw">
+            </div>
+        </div>
+          <p> Please select a shipping option before you continue</p>
+        <input type="radio" id="free" name="shipping" value="FREE" >
+        <label for="free">Free 7 day</label><br>
+        <input type="radio" id="overnight" name="shipping" value="OVERNIGHT"  >
+        <label for="overnight">$50.00 overnight</label><br>
+        <input type="radio" id="three" name="shipping" value="THREE" >
+        <label for="three">$5.00 three day</label>
+    </div>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+    </form>
+    </body>
+</html>
